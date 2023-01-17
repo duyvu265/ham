@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim gia tri nho nhat</title>
+</head>
+<body>
+<script>
+
+    let arr1=[3,5,1,8,-3,7,8];
+    tinh(arr1)
+    let arr2=[7,12,6,9,20,56,89];
+    tinh(arr2);
+    let arr3=[];
+    tinh(arr3);
+    let arr4=[0,0,0,0,0,0];
+    tinh(arr4);
+
+function tinh(x) {let min=x[0];
+if (x.length===0) {
+    document.write("tập rỗng");
+}else {
+    for (let i = 0; i <x.length ; i++) {
+        if (min>x[i]){
+            min=x[i];
+        }
+    }
+}document.write(min +"<br>");
+
+}
+
+
+
+</script>
+</body>
+</html>

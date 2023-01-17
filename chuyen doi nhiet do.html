@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+bai 2
+<h1>Temperature converter</h1>
+<b>type a value in the Fahrenheit field to convert the value to celcius :</b> <br>
+Fahernheit <input placeholder="1" type="number" oninput="chuyendoi(this.value) "> <br>
+Celcius :
+<h7 id="demo"></h7>
+<script>
+    function chuyendoi(giatri) {
+        let c = (giatri - 32) / 1.8;
+        document.getElementById("demo").innerHTML = c;
+    }
+</script>
+</body>
+</html>
